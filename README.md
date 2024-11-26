@@ -3,15 +3,15 @@ A comprehensive environmental model for the conditions a 10k or 30k ft rocket wo
 
 This repository contains:
 
-    - Python code for calculating local atmospheric properties, the local gravitational force, and a few aerodynamic flow properties
-    - A Locations class for storing attributes of a location for use in the aforementioned calculations
-    - Initializations of that class for the environments encountered at Spaceport America Cup and Launch Canada
-    - An Excel file with the atmospheric conditions at SAC and LC at different altitudes
-    - Jupyter notebooks detailing the theory behind the code (WIP)
+- Python code for calculating local atmospheric properties, the local gravitational force, and a few aerodynamic flow properties
+- A Locations class for storing attributes of a location for use in the aforementioned calculations
+- Initializations of that class for the environments encountered at Spaceport America Cup and Launch Canada
+- An Excel file with the atmospheric conditions at SAC and LC at different altitudes
+- Jupyter notebooks detailing the theory behind the code (WIP)
 
 To be added:
 
-    - Jupyter notebooks for learning how to use the code
+- Jupyter notebooks for learning how to use the code
 
 
 Future updates
