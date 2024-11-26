@@ -127,3 +127,6 @@ def speed_of_sound(temp):
         Speed of sound in meters per second.
     """
     return np.sqrt(con.adiabatic_index_air_times_R_specific_air * temp)
+
+
+# Humidity functions - these functions are primarily for interest, as for our project, it's not worth it to consider humidity's effect on air properties.

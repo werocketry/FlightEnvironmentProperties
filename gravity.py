@@ -9,7 +9,7 @@ def get_local_gravity(latitude, h = 0):
     latitude : float
         Latitude in degrees.
     h : float
-        Ground level elevation above sea level in meters. Defaults to 0.
+        Elevation above sea level in meters. Defaults to 0.
 
     Returns
     -------
@@ -20,6 +20,7 @@ def get_local_gravity(latitude, h = 0):
     ----------
     Based on the International Gravity Formula 1980 (IGF80) model, as outlined in https://en.wikipedia.org/wiki/Theoretical_gravity#International_gravity_formula_1980
     """
+    latitude = np.abs(latitude) # The formula is symmetric about the equator (like the oblate spheroid Earth)
 
     phi = np.deg2rad(latitude)
 

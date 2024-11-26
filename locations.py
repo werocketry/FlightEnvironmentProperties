@@ -20,6 +20,7 @@ class Location:
 
     local_gravity : float
         The local gravity at the location in m/s^2.
+
     density_multiplier : float
         A constant derived from the temperature and pressure at the launchpad, the lapse rate, the specific gas constant for air, and the magnitude of the force of gravity. Used in the air_density_optimized function. Equal to ground_pressure / (R_specific_air * pow(ground_temperature, - local_gravity / (R_specific_air * T_lapse_rate))).
     density_exponent : float

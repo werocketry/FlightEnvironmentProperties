@@ -1,10 +1,10 @@
-def calculate_dynamic_pressure(air_density, speed):
+def calculate_dynamic_pressure(fluid_density, speed):
     """
     Calculate the dynamic pressure imparted on a solid moving through a fluid.
 
     Args
     ----
-    air_density : float
+    fluid_density : float
         The density of the fluid.
     speed : float
         The relative speed between the solid and the fluid.
@@ -14,7 +14,7 @@ def calculate_dynamic_pressure(air_density, speed):
     float
         The dynamic pressure on the solid.
     """
-    return 0.5 * air_density * (speed ** 2)
+    return 0.5 * fluid_density * (speed ** 2)
 
 def calculate_mach_number(speed, speed_of_sound):
     """
@@ -34,24 +34,24 @@ def calculate_mach_number(speed, speed_of_sound):
     """
     return speed / speed_of_sound
 
-def calculate_reynolds_number(air_density, speed, len_characteristic, dynamic_viscosity):
+def calculate_reynolds_number(fluid_density, speed, len_characteristic, dynamic_viscosity):
     """
-    Calculate the Reynolds number of a solid moving through air.
+    Calculate the Reynolds number of a solid moving through a fluid.
 
     Args
     ----
-    air_density : float
-        The density of the air.
+    fluid_density : float
+        The density of the fluid.
     speed : float
-        The relative speed of the solid and the air.
+        The relative speed between the solid and the fluid.
     len_characteristic : float
         The characteristic length of the solid.
     dynamic_viscosity : float
-        The dynamic viscosity of the air.
+        The dynamic viscosity of the fluid.
 
     Returns
     -------
     float
-        The Reynolds number of the solid.
+        The Reynolds number of the solid moving through the fluid.
     """
-    return air_density * speed * len_characteristic / dynamic_viscosity
+    return fluid_density * speed * len_characteristic / dynamic_viscosity
