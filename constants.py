@@ -1,4 +1,4 @@
-# Constants 
+# Constants
 R_universal = 8.3144598  # universal gas constant, J/(mol*K)
 MM_air = 0.0289644  # molar mass of air, kg/mol
 adiabatic_index_air = 1.4  # unitless

@@ -12,7 +12,7 @@ def temp_at_altitude(h, reference_temp, lapse_rate = con.T_lapse_rate):
     reference_temp : float
         Temperature at the reference altitude in Celsius or Kelvin.
     lapse_rate : float, optional
-        Rate at which temperature decreases with increasing altitude in degrees Celsius or Kelvin per meter. Defaults to the standard lapse rate of 0.0065.
+        Rate at which temperature decreases with increasing altitude in degrees Celsius or Kelvin per meter. Defaults to the standard lapse rate of -0.0065.
 
     Returns
     -------
